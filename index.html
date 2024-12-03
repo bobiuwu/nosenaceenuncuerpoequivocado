@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="icon.ico" type="image/x-icon">
+	<title>No se nace en un cuerpo equivocado</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+		/* Set the font and general text style */
+		body, html {
+			margin: 0;
+			padding: 0;
+			font-family: Roboto Condensed;
+			background-image: url("resources/boats.jpg");
+			color: whitesmoke;
+			background-position: center 10%;
+			background-size: cover;
+		}
+		
+		#header {
+			position: relative;
+			font-family: 'Honk', sans-serif;
+			text-align: center;
+			width: 100%;
+			height: 100vh; /* Set height to fill the viewport */
+			overflow: hidden;
+			z-index: 1; /* Ensures that bg-video stays on top over bg image */
+		}
+
+		/* Style for the video background */
+		.bg-video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover; /* Ensures the video covers the area */
+			z-index: -1; /* Make sure video stays behind the text */
+		}
+
+		/* Style for the text */
+		.text-header {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%); /* Centers the text */
+			font-size: 250%;
+			z-index: 1; /* Ensure text appears above the video */
+		}
+
+		footer{
+			background-color: #212121;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+		}
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+		.box{
+			flex: 1 1 30%;
+			margin: 10px;
+			height: 100px;
+			text-align: center;
+			line-height: 100px;
+			font-size: 20px;
+			background-color: darkgray;
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+		.box_audios{
+			flex: 1 1 10%;
+			margin: 10px;
+			height: 100px;
+			text-align: center;
+			line-height: 100px;
+			font-size: 20px;
+			background-color: darkgray;
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+		.asterisk{
+			font-size: 75px;
+			text-align: center;
+		}
+		#transparent {
+			background-color: rgba(0, 0, 0, 0);
+		}
+		#semitransparent {
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+		#pic_div {
+			background-image: url("resources/boats.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<video autoplay muted loop class="bg-video">
+			<source src="resources/ocean.mp4" type="video/mp4">
+		</video>
+		<div class="text-header">
+			<h1>No se nace en un cuerpo equivocado</h1>
+		</div>
+	</div>
+	<br/>
+	<div style="text-align: center;">
+		<h1 class="asterisk">*</h1>
+		<h2>Here goes the summary about the webdoc</h2>
+		<p>More text more text</p>
+	</div>
+	<!-- Container sections every box class into blocks -->
+	<div class="container">
+		<div class="box">Div 1</div>
+		<div class="box">Div 2</div>
+		<div class="box">Div 3</div>
+		<div class="box">Div 4</div>
+		<div class="box">Div 5</div>
+		<div class="box">Div 6</div>
+	</div>
+	<div class="container">
+		<div class="box">Div 1</div>
+		<div class="box" id="pic_div">Div 2</div>
+	</div>
+	<div class="container">
+		<div class="box" id="pic_div">Div 1</div>
+		<div class="box">Div 2</div>
+	</div>
+	<div class="container">
+		<div class="box">Div 1</div>
+		<div class="box" id="pic_div">Div 2</div>
+	</div>
+	<div class="container">
+		<div class="box" id="transparent"><h2>Conoce más casos</h2></div>
+	</div>
+	<div class="container">
+		<div class="box_audios">Preguntas</div>
+		<div class="box_audios">Persona 1</div>
+		<div class="box_audios">Persona 2</div>
+		<div class="box_audios">Persona 3</div>
+		<div class="box_audios">Persona 4</div>
+	</div>
+	<div class="container">
+		<div class="box_audios">Pregunta 1</div>
+		<div class="box_audios">Audio 1</div>
+		<div class="box_audios">Audio 2</div>
+		<div class="box_audios">Audio 3</div>
+		<div class="box_audios">Audio 4</div>
+	</div>
+
+	<!-- Footer for credits -->
+	<footer>
+		<div>
+			<b>Credits to Erika, Alvaro, Manu, Roger</b>
+		</div>
+		<div>
+			<b>@2024 Centre Villar</b>
+		</div>
+	</footer>
+</body>
+</html>
