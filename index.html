@@ -14,7 +14,7 @@
 			margin: 0;
 			padding: 0;
 			font-family: Roboto Condensed;
-			background-image: url("resources/boats.jpg");
+			background-color: #fc667f;
 			color: whitesmoke;
 			background-position: center 10%;
 			background-size: cover;
@@ -83,6 +83,20 @@
 			background-color: darkgray;
 			background-color: rgba(0, 0, 0, 0.2);
 		}
+		.box_personas{
+			flex: 1 1 10%;
+			margin: 10px;
+			height: 200px;
+			display: flex;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			line-height: 100px;
+			font-size: 20px;
+			background-color: darkgray;
+			background-color: rgba(0, 0, 0, 0.2);
+			font-weight: bold;
+		}
 		.asterisk{
 			font-size: 75px;
 			text-align: center;
@@ -94,7 +108,28 @@
 			background-color: rgba(0, 0, 0, 0.2);
 		}
 		#pic_div {
-			background-image: url("resources/boats.jpg");
+			background-image: url("resources/cleo.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			width: 100%;
+		}
+		#pic_div2 {
+			background-image: url("resources/daniel.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			width: 100%;
+		}
+		#pic_div3 {
+			background-image: url("resources/erika.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			width: 100%;
+		}
+		#pic_div4 {
+			background-image: url("resources/sigrid.png");
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center center;
@@ -127,6 +162,36 @@
 			position: relative;
 			padding-top: 25%;
 		}
+		.anon {
+			background-image: url("resources/anon.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			flex: 1 1 10%;
+			margin: 10px;
+			height: 200px;
+			display: flex;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			line-height: 100px;
+			font-size: 20px;
+			background-color: darkgray;
+			background-color: rgba(0, 0, 0, 0.2);
+			font-weight: bold;
+		}
+		#raul {
+			background-image: url("resources/raul.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+		#daenerys {
+			background-image: url("resources/daenerys.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
 	</style>
 </head>
 <body>
@@ -141,8 +206,8 @@
 	<br/>
 	<div style="text-align: center;">
 		<h1 class="asterisk">*</h1>
-		<h2>Here goes the summary about the webdoc</h2>
-		<p>More text more text</p>
+		<h2>Un documental hecho por y para gente trans &#128150;</h2>
+		<p>Una compliación de entrevistas, informes médicos, y toda la realidad detras del cambio contada por ellos mismos.</p>
 	</div>
 	<!-- Container sections every box class into blocks -->
 	<div class="container">
@@ -154,33 +219,70 @@
 		<div class="box"><a href="https://centrevillarcsp-my.sharepoint.com/:f:/g/personal/mamabe_alumne_centrevillar_com/Er_ghS7TA_FMsSmxes9troEBoo5W30VaxbjfEynunkZCSg?e=RyEMY4"><b>Making off</b></a></div>
 	</div>
 	<div class="container">
-		<div class="box">Div 1</div>
-		<div class="box" id="pic_div">Div 2</div>
+		<div class="box"><b>Cleo</b></div>
+		<div class="box" id="pic_div"></div>
+		<script>
+			document.getElementById("pic_div").addEventListener("click", function() {
+				window.location.href = "https://example.com";
+			});
+		</script>
 	</div>
 	<div class="container">
-		<div class="box" id="pic_div">Div 1</div>
-		<div class="box">Div 2</div>
+		<div class="box" id="pic_div2"></div>
+		<script>
+			document.getElementById("pic_div2").addEventListener("click", function() {
+				window.location.href = "https://example.com";
+			});
+		</script>
+		<div class="box"><b>Daniel</b></div>
 	</div>
 	<div class="container">
-		<div class="box">Div 1</div>
-		<div class="box" id="pic_div">Div 2</div>
+		<div class="box"><b>Erika</b></div>
+		<div class="box" id="pic_div3"></div>
+		<script>
+			document.getElementById("pic_div3").addEventListener("click", function() {
+				window.location.href = "https://example.com";
+			});
+		</script>
+	</div>
+	<div class="container">
+		<div class="box" id="pic_div4"></div>
+		<script>
+			document.getElementById("pic_div4").addEventListener("click", function() {
+				window.location.href = "https://example.com";
+			});
+		</script>
+		<div class="box"><b>Sigrid</b></div>
 	</div>
 	<div class="container">
 		<div class="box" id="transparent"><h2>Conoce más casos</h2></div>
 	</div>
 	<div class="container">
-		<div class="box_audios">Preguntas</div>
-		<div class="box_audios">Persona 1</div>
-		<div class="box_audios">Persona 2</div>
-		<div class="box_audios">Persona 3</div>
-		<div class="box_audios">Persona 4</div>
-	</div>
-	<div class="container">
-		<div class="box_audios">Pregunta 1</div>
-		<div class="box_audios">Audio 1</div>
-		<div class="box_audios">Audio 2</div>
-		<div class="box_audios">Audio 3</div>
-		<div class="box_audios">Audio 4</div>
+		<div class="box_personas">Audios</div>
+		<div class="box_personas" id="raul">Raul</div>
+		<script>
+			document.getElementById("raul").addEventListener("click", function() {
+				window.location.href = "https://drive.google.com/drive/folders/16gHC9MIh0m0aSrjRX-gpPEj9hpGHog_2?usp=sharing";
+			});
+		</script>
+		<div class="anon" id="alicia">Alicia</div>
+		<script>
+			document.getElementById("alicia").addEventListener("click", function() {
+				window.location.href = "https://drive.google.com/drive/folders/10svit0VLHEh8lQNWJqktnX_yXKWHIgwb?usp=sharing";
+			});
+		</script>
+		<div class="box_personas" id="daenerys">Daenerys Dennis</div>
+		<script>
+			document.getElementById("daenerys").addEventListener("click", function() {
+				window.location.href = "https://drive.google.com/drive/folders/1ebhcQ3MPHN8ONvZjNWYO2O8iDWd53QBB?usp=sharing";
+			});
+		</script>
+		<div class="anon" id="sandra">Sandra Mercado</div>
+		<script>
+			document.getElementById("sandra").addEventListener("click", function() {
+				window.location.href = "https://drive.google.com/drive/folders/1cPxCQGe416UQxCnqHox4DZlcvWmB3vuP?usp=sharing";
+			});
+		</script>
 	</div>
 
 	<!-- Footer for credits -->
